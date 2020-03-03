@@ -5,5 +5,7 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  title: "Wazaby Tech",
+  tagline: "",
+  established: 2020
 }
