@@ -4,8 +4,4 @@
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
 
-module.exports = {
-  title: "Wazaby Tech",
-  tagline: "",
-  established: 2020
-}
+module.exports = { }

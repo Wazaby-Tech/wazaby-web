@@ -4,8 +4,8 @@ import Header from "../components/header"
 import Footer from "../components/footer"
 
 export default () => (
-<Container>
-    <Header headerText="Wazaby Tech LLC" />
-    <Footer />
-</Container>
+    <Container style={{color: `teal`}}>
+        <Header headerText="About Wazaby" />
+        <Footer />
+    </Container>
 )
