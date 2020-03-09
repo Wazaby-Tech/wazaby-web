@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 
-export default () => (
+export default () =>
+(
     <Layout>
-        <h3>About Us</h3>
+        <h2>Contact Us</h2>
     </Layout>
 )
