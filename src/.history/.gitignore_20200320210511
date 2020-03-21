@@ -56,7 +56,6 @@ typings/
 
 # gatsby files
 .cache/
-.history/
 public
 
 # Mac files
@@ -68,3 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
+
+# History folder
+.history/
