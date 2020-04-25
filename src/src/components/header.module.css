@@ -1,7 +1,9 @@
 .header {
-    text-decoration: underline;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .links {
-    float: right;
+    margin: 0 auto;
 }

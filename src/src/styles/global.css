@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
 
 html {
-  background-color: rgb(170, 252, 204);
+  background-color: darkgray;
 }
 
 body {  
   font-family: Ubuntu Condensed, Verdana, Arial;
-  font-size: 12pt;
+  font-size: 14pt;
 }
 
 a {
