@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import headerStyles from "./header.module.css"
-import {iconicHome} from "../images/open-iconic/png/home-2x.png"
 
 export default props => (
     <div id="header" className={headerStyles.header}>
