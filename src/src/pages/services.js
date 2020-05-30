@@ -5,7 +5,7 @@ export default () => (
     <Layout>
         <h4>Services</h4>
         <p>
-            Wazaby provides a consultation of your technical business needs and offers their strategy suggestions.
+            Wazaby provides a consultation of your technical business needs and offers their strategic suggestions.
             <br/>
             <ul>
                 <li>Technical Consultation</li>
