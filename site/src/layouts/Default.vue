@@ -32,6 +32,7 @@ body {
   padding:0;
   line-height: 1.5;
   background-color: #848482;
+  color: #2C3539;
 }
 
 a {
@@ -79,5 +80,6 @@ a:visited {
   align-items: center;
   margin-top: 20px;
   height: 50px;
+  border-top: solid 1px #848482;
 }
 </style>
