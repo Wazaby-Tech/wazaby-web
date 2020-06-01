@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: 'Wazaby Tech',
-  siteDescription: 'Making technology work for you',
-  siteUrl: 'http://www.wazabytech.com',
+  siteDescription: 'Delivering technology that works for you',
+  siteUrl: 'https://www.wazabytech.com',
   plugins: []
 }
