@@ -10,6 +10,6 @@
                 <li>Modernization of Legacy Applications</li>
             </ul>
         </p>
-        <p>For inquiries, send your name and the best way to contact you to <a href="mailto:wazabytech@outlook.com">wazabytech@outlook.com</a></p>
+        <p>For inquiries, send your name and the best way to contact you to <a href="mailto:inquiries@wazabytech.com">inquiries@wazabytech.com</a></p>
     </Layout>
 </template>
