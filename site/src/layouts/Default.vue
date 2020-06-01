@@ -11,6 +11,7 @@
     <slot/>
     <footer class="footer">
       &copy; 2020 Wazaby Tech
+      <g-link class="footer__link" to="/contact/">Contact</g-link>
     </footer>
   </div>
 </template>
