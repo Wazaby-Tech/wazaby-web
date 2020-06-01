@@ -2,7 +2,7 @@
 .cache
 .DS_Store
 src/.temp
-site/.temp
+site/src/.temp
 node_modules
 dist
 .env
