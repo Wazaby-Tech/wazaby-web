@@ -11,7 +11,6 @@
     <slot/>
     <footer class="footer">
       &copy; 2020 Wazaby Tech
-      <g-link class="footer__link" to="/contact/">Contact</g-link>
     </footer>
   </div>
 </template>
@@ -42,10 +41,6 @@ a {
   color: #27B60A;
 }
 
-a:active {
-  color: black;
-}
-
 a:visited {
   color: #27B60A;
 }
@@ -59,10 +54,6 @@ a.header__link {
   text-decoration: none;
   font-weight: bold;
   font-size: 2em;
-}
-
-a.nav__link:active {
-  font-weight: bold;
 }
 
 a.nav__link:visited, a.header__link:visited {
