@@ -8,18 +8,18 @@
             Michael Holloway is an experienced software engineer who has developed solutions for a variety of companies spanning government, entertainment, food, industrial and education industries. He has over 10 years experience working and specializing in Microsoft technologies.
         </p>
         <p>
-          <g-link to="https://www.github.com/mholloway24">
+          <a href="https://www.github.com/mholloway24">
             <g-image alt="Github" src="~/assets/images/github.svg" width="35" />
-          </g-link>&nbsp;&nbsp;&nbsp;
-          <g-link to="https://www.twitter.com/wazabydev">
+          </a>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.twitter.com/wazabydev">
             <g-image alt="Github" src="~/assets/images/twitter.svg" width="35" />
-          </g-link>&nbsp;&nbsp;&nbsp;
-          <g-link to="https://www.linkedin.com/in/michael-holloway-5bb15b77">
+          </a>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.linkedin.com/in/michael-holloway-5bb15b77">
             <g-image alt="Github" src="~/assets/images/linkedin.svg" width="35" />
-          </g-link>&nbsp;&nbsp;&nbsp;
-          <g-link to="https://www.instagram.com/mholloway24">
+          </a>&nbsp;&nbsp;&nbsp;
+          <a href="https://www.instagram.com/mholloway24">
             <g-image alt="Github" src="~/assets/images/instagram.svg" width="35" />
-          </g-link>
+          </a>
         </p>
   </Layout>
 </template>
