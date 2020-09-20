@@ -22,13 +22,10 @@
             <g-image alt="Github" src="~/assets/images/github.svg" width="20" />
           </a>&nbsp;&nbsp;&nbsp;
           <a href="https://www.twitter.com/wazabydev">
-            <g-image alt="Github" src="~/assets/images/twitter.svg" width="20" />
+            <g-image alt="Twitter" src="~/assets/images/twitter.svg" width="20" />
           </a>&nbsp;&nbsp;&nbsp;
           <a href="https://www.linkedin.com/in/michael-holloway-5bb15b77">
-            <g-image alt="Github" src="~/assets/images/linkedin.svg" width="20" />
-          </a>&nbsp;&nbsp;&nbsp;
-          <a href="https://www.instagram.com/mholloway24">
-            <g-image alt="Github" src="~/assets/images/instagram.svg" width="20" />
+            <g-image alt="LinkedIn" src="~/assets/images/linkedin.svg" width="20" />
           </a>
         </p>
   </Layout>
