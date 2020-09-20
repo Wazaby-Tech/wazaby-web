@@ -116,4 +116,4 @@ dist
 .pnp.*
 
 # Gridsome temp folder
-*/.temp/*
+.temp
