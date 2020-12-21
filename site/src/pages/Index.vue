@@ -3,7 +3,7 @@
     <h1>{{$static.metadata.siteDescription}}</h1>
 
     <div class="image-row">
-      <g-image src="~/assets/images/home-page-3.jpg" width="360" height="200" fit="fill" />
+      <g-image src="~/assets/images/home-page-4.jpg" width="360" height="200" fit="fill" />
       <g-image src="~/assets/images/home-page-1.jpg" width="360" height="200" fit="fill" />
       <g-image src="~/assets/images/home-page-2.jpg" width="360" height="200" fit="fill" />
     </div>
