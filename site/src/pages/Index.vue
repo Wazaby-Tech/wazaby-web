@@ -31,11 +31,8 @@ export default {
 
 <style>
 .image-row {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.home-links a {
-  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  align-content: space-around;
 }
 </style>
