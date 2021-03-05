@@ -10,7 +10,7 @@
     </header>
     <slot/>
     <footer class="footer">
-      &copy; 2020 - 2021 Wazaby Tech LLC
+      &copy; 2021 Wazaby Tech LLC
     </footer>
   </div>
 </template>
