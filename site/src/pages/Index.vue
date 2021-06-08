@@ -8,7 +8,7 @@
       <g-image src="~/assets/images/home-page-2.jpg" width="360" height="200" fit="fill" />
     </div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum, vitae, consequuntur rerum illum odit fugit assumenda rem dolores inventore iste reprehenderit maxime! Iusto.</p>
+    <p>Wazaby Tech is a technology services company determined to hack your business one transformative, impactful and efficiency boosting solution at a time.</p>
 
   </Layout>
 </template>

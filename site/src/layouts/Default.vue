@@ -1,7 +1,9 @@
 <template>
   <div class="layout">
     <header class="header">
-      <g-link class="header__link" to="/">{{ $static.metadata.siteName }}</g-link>
+      <g-link class="header__link" to="/">
+        <g-image alt="Wazaby Tech LLC" src="~/assets/images/wazaby-logo-black.png" width="100" />
+      </g-link>
       <nav class="nav">
         <g-link class="nav__link" to="/">Home</g-link>
         <g-link class="nav__link" to="/services/">Services</g-link>
@@ -46,18 +48,18 @@ a:visited {
 }
 
 a.nav__link {
-  color: white;
+  color: #27B60A;
 }
 
 a.header__link {
-  color: white;
+  color: #27B60A;
   text-decoration: none;
   font-weight: bold;
   font-size: 2em;
 }
 
 a.nav__link:visited, a.header__link:visited {
-  color: white;
+  color: #27B60A;
 }
 
 .layout {
@@ -72,13 +74,12 @@ a.nav__link:visited, a.header__link:visited {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 100px;
+  background-color: black;
   margin-bottom: 20px;
-  height: 80px;
-  background-color: #27B60A;
   margin-left: -20px;
   margin-right: -20px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 15px;
 }
 
 .footer {
