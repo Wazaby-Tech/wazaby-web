@@ -1,8 +1,0 @@
-*.log
-.cache
-.DS_Store
-*/.temp/**
-node_modules
-dist
-.env
-.env.*
