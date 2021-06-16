@@ -2,13 +2,13 @@
 /** @jsx jsx */
 import { jsx } from 'theme-ui';
 import { Link } from 'components/link';
-import LogoSvg from 'components/icons/logo';
-import WazabyBlackTransparent from 'assets/images/logos';
+import Image from 'components/image';
+import WLogo from 'assets/images/logos/WazabyWhiteTransparent.png';
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
-      <WazabyBlackTransparent />
+      <Image src={WLogo} alt='Wazaby Tech' height='100' width='100' />
     </Link>
   );
 }

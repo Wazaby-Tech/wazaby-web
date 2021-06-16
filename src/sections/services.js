@@ -12,20 +12,20 @@ const data = [
   {
     id: 1,
     icon: icon1,
-    title: 'Marketing & advertising',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Technical Consultation',
+    description: `Need an technical opinion on a business problem? Let's take a look.`,
   },
   {
     id: 3,
     icon: icon2,
-    title: 'Ultimate development',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Custom Software Development',
+    description: `Need a custom or propietary solution built just for you? Let's build it together.`,
   },
   {
     id: 4,
     icon: icon3,
-    title: 'Business Enterprise',
-    description: `Get your info tests delivered at home collect a sample from the your progress tests.`,
+    title: 'Legacy Application Modernization',
+    description: `Your legacy system need a makeover? Let's put some glamour on it.`,
   },
 ];
 
@@ -35,8 +35,8 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Grow your startup with our Service"
-          description="Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents."
+          title="Clever mission statement goes here"
+          description="We make your company better and more efficient"
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (

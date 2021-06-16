@@ -22,9 +22,9 @@ export function NavLink({ path, label, children, ...rest }) {
   );
 }
 
-export function Link({ path, label, children, ...rest }) {
+export function Link({ path, label, external, children, ...rest }) {
   return (
-    <NextLink href={path}>
+    <NextLink href={path} passHref={external ?? false}>
       <A {...rest}>{children ? children : label}</A>
     </NextLink>
   );

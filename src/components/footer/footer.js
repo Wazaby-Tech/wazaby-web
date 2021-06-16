@@ -22,7 +22,7 @@ export default function Footer() {
               <Link path="#!">Privacy</Link>
             </Box>
             <Text as="p" sx={styles.copyright}>
-              Copyright by {new Date().getFullYear()} RedQ, Inc
+              &copy; {new Date().getFullYear()} Wazaby Tech LLC
             </Text>
           </Box>
           {menuItems.map(({ id, title, items }) => (
@@ -66,7 +66,7 @@ const styles = {
   },
   logo: {
     display: ['flex'],
-    justifyContent: ['center', null, null, 'unset'],
+    justifyContent: 'center',
     gridColumn: '1/2',
   },
   terms: {

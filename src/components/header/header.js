@@ -24,14 +24,8 @@ export default function Header() {
                         <NavLink path={path} label={label} />
                       </li>
                     ))}
-                  </Box>
-                  <Button variant="text" sx={styles.getStartedDesktop}>
-                    Get Started
-                  </Button>
+                  </Box>                  
                 </Box>
-                <Button variant="text" sx={styles.getStartedMobile}>
-                  Get Started
-                </Button>
                 <NavbarDrawer />
               </Box>
             </Container>
@@ -83,10 +77,7 @@ const styles = {
     listStyle: 'none',
     // marginLeft: 'auto',
     flexGrow: 1,
-    p: 0,
-    'li:last-child': {
-      ml: ['auto'],
-    },
+    p: 0,    
     '.nav-item': {
       cursor: 'pointer',
       fontWeight: 400,
@@ -96,19 +87,7 @@ const styles = {
     '.active': {
       color: 'primary',
     },
-  },
-  getStartedDesktop: {
-    color: 'primary',
-    display: ['none', 'none', 'none', 'none', 'flex'],
-  },
-  getStartedMobile: {
-    color: 'primary',
-    fontSize: [1],
-    minHeight: 30,
-    m: ['0 15px 0 auto'],
-    padding: '0 11px',
-    display: ['flex', null, null, null, 'none'],
-  },
+  },  
   closeButton: {
     height: '32px',
     padding: '4px',

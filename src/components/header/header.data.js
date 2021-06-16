@@ -14,13 +14,5 @@ export default [
   {
     path: 'why-us',
     label: 'Why Us',
-  },
-  {
-    path: 'blog',
-    label: 'Blog',
-  },
-  {
-    path: 'login',
-    label: 'Login',
-  },
+  }
 ];

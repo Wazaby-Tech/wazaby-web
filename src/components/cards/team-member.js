@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Flex, Box, Image, Text, Heading, Link } from 'theme-ui';
-import { FaTwitter, FaGithub, FaDribbble } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const TeamMember = ({ member }) => {
   return (
@@ -21,11 +21,10 @@ const TeamMember = ({ member }) => {
               {social?.name === 'github' && (
                 <FaGithub size="18px" color="#161614" />
               )}
-              {social?.name === 'dribbble' && (
-                <FaDribbble
+              {social?.name === 'linkedin' && (
+                <FaLinkedin
                   size="18px"
-                  color="#B2215A"
-                  style={{ backgroundColor: '#E74D89', borderRadius: 20 }}
+                  style={{ borderRadius: 20 }}
                 />
               )}
             </Link>
