@@ -30,9 +30,9 @@ export function Link({ path, label, external, children, ...rest }) {
   );
 }
 
-export function LearnMore({ path, label, children, ...rest }) {
+export function LearnMore({ path, label, external, children, ...rest }) {
   return (
-    <NextLink href={path}>
+    <NextLink href={path} passHref={external ?? false}>
       <A sx={styles.learnMore} {...rest}>
         {label ?? 'Learn More'} <HiOutlineChevronRight />
       </A>
