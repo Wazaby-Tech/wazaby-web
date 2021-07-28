@@ -1,0 +1,14 @@
+{
+  "name": "wazaby-web",
+  "description": "Wazaby Tech LLC website",
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
