@@ -25,7 +25,7 @@ const data = [
     id: 4,
     icon: icon3,
     title: 'Legacy Application Modernization',
-    description: `Your legacy system need a makeover? Let's put some glamour on it.`,
+    description: `Your legacy system need a makeover? Let's make it shine.`,
   },
 ];
 
@@ -35,7 +35,7 @@ const Services = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Clever mission statement goes here"
+          title="Our Services"
           description="We make your company better and more efficient"
         />
         <Box sx={styles.contentWrapper}>

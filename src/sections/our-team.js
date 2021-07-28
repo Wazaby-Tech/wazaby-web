@@ -17,7 +17,7 @@ const data = [
     id: 1,
     avatar: avatar1,
     name: 'Mike Holloway',
-    designation: 'CEO',
+    designation: 'Founder & CEO',
     socialLinks: [
       {
         name: 'twitter',

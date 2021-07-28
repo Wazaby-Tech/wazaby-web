@@ -4,22 +4,19 @@ import { jsx, Box, Container, Heading, Text, Image } from 'theme-ui';
 import Tabs, { TabPane } from 'rc-tabs';
 import { RiCheckboxCircleFill } from 'react-icons/ri';
 import { rgba } from 'polished';
-import { LearnMore } from 'components/link';
 import tabImage1 from 'assets/images/tab-illustration-1.png';
 
 const data = [
   {
     id: 1,
-    tabTitle: 'Why you choose our service?',
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    moreLink: '#explore-more',
+    tabTitle: 'Why choose Wazaby Tech?',
+    title: `We will work with you to design the best solution`,
+    description: `Our technical consultation will outline the best solution and ensure achieved business objectives.`,
     image: tabImage1,
     list: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
+      'Technical Experience',
+      'Stimulate Growth',
+      'Streamlined Approach'
     ],
   },
   {
@@ -27,7 +24,6 @@ const data = [
     tabTitle: 'What’s our business promise?',
     title: `We will turn your idea in the successful business model framework`,
     description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    moreLink: '#explore-more',
     image: tabImage1,
     list: [
       'Medical and vision',
@@ -41,7 +37,6 @@ const data = [
     tabTitle: 'What’s our role model plan?',
     title: `We will turn your idea in the successful business model framework`,
     description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    moreLink: '#explore-more',
     image: tabImage1,
     list: [
       'Medical and vision',
@@ -78,9 +73,6 @@ const WhyUs = () => {
                       <span>{item}</span>
                     </Box>
                   ))}
-                </Box>
-                <Box sx={styles.learnMore}>
-                  <LearnMore path={item.moreLink} label="Explore more" />
                 </Box>
               </Box>
               <Box sx={styles.illustration}>
@@ -159,7 +151,7 @@ const styles = {
       },
       '.list-item': {
         fontSize: [0, null, null, 1, 2],
-        fontWeight: 500,
+        fontWeight: 450,
         lineHeight: [2.8],
         display: 'flex',
         alignItems: 'center',
