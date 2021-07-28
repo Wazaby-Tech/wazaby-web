@@ -14,35 +14,8 @@ const data = [
     description: `Our technical consultation will outline the best solution and ensure achieved business objectives.`,
     image: tabImage1,
     list: [
-      'Technical Experience',
-      'Stimulate Growth',
-      'Streamlined Approach'
-    ],
-  },
-  {
-    id: 2,
-    tabTitle: 'What’s our business promise?',
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    image: tabImage1,
-    list: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
-    ],
-  },
-  {
-    id: 3,
-    tabTitle: 'What’s our role model plan?',
-    title: `We will turn your idea in the successful business model framework`,
-    description: `Get your tests delivered at let home collect sample from the victory of the managements that supplies best design system guidelines ever.`,
-    image: tabImage1,
-    list: [
-      'Medical and vision',
-      'Life insurance',
-      'HSAs and FSAs',
-      'Commuter benefits',
+      'Robust Solutions',
+      'Technical Expertise',
     ],
   },
 ];
