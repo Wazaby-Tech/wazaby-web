@@ -29,7 +29,11 @@ const data = [
       },
       {
         name: 'linkedin',
-        link: 'https://www.linkedin.com/in/michael-holloway-5bb15b77'
+        link: 'https://www.linkedin.com/in/michael-holloway-wazaby'
+      },
+      {
+        name: 'twitch',
+        link: 'https://twitch.tv/wazabydev'
       }
     ],
   }
