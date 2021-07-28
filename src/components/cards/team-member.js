@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Flex, Box, Image, Text, Heading, Link } from 'theme-ui';
-import { FaTwitter, FaGithub, FaLinkedin, FaTwitch } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin, FaTwitch, FaInstagram } from 'react-icons/fa';
 
 const TeamMember = ({ member }) => {
   return (
@@ -22,14 +22,13 @@ const TeamMember = ({ member }) => {
                 <FaGithub size="18px" color="#161614" />
               )}
               {social?.name === 'linkedin' && (
-                <FaLinkedin
-                  size="18px"
-                />
+                <FaLinkedin size="18px" />
               )}
               {social?.name === 'twitch' && (
-                <FaTwitch
-                  size="18px"
-                />
+                <FaTwitch size="18px" />
+              )}
+              {social?.name === 'instagram' && (
+                <FaInstagram size="18px" />
               )}
             </Link>
           ))}
