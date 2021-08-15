@@ -36,10 +36,26 @@ const data = [
         link: 'https://twitch.tv/wazabydev'
       }
     ],
+    industries: [ 'government', 'public safety', 'education', 'entertainment', 'industrial', 'sales' ],
+    resume: {
+      details: 'Mike is an experienced software engineer with over 10 years of experience working in various industries providing custom technical solutions. Mike is well versed in Microsoft technologies and frontend frameworks from .NET Framework and .NET Core to Javascript and React.',
+      jobs: [{
+        company: 'AXS',
+        industry: 'entertainment',
+        dates: 'July 2018 - Present',
+        duties: ''
+      },
+      {
+        company: 'Advantage Sales & Marketing',
+        industry: 'sales',
+        dates: 'January 2017 - July 2018',
+        duties: ''
+      }]
+    }
   }
 ];
 
-const OurTeam = () => {
+const OurFounder = () => {
   const swiperRef = useRef(null);
   const containerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -99,7 +115,7 @@ const OurTeam = () => {
         <SectionHeading
           sx={styles.heading}
           title="Meet the founder"
-          description="Build cool stuff with us."
+          description=""
         />
       </Container>
       <Box
@@ -143,7 +159,7 @@ const OurTeam = () => {
   );
 };
 
-export default OurTeam;
+export default OurFounder;
 
 const styles = {
   section: {
