@@ -2,52 +2,69 @@
 /** @jsx jsx */
 import { jsx, Flex, Box, Image, Text, Heading, Link } from 'theme-ui';
 import { FaTwitter, FaGithub, FaLinkedin, FaTwitch, FaInstagram } from 'react-icons/fa';
+import ResumeJob from './resume-job';
 
 const FounderProfile = ({ member }) => {
   console.log(member);
-  let industryListItems = member?.industries?.map((industry, index) => (<li>industry</li>))
+  let industryListItems = member?.industries?.map((industry) => (<li>{industry}</li>))
+  let resumeJobs = member?.resume?.jobs?.map((job) => (<ResumeJob job={job} />))
 
   return (
-    <Box sx={styles.section}>
-      <Flex as="figure" sx={styles.avatar}>
-        <Image src={member?.avatar} alt={member?.name} />
-      </Flex>
-      <Box sx={styles.about}>
-        <Heading as="h3">{member?.name}</Heading>
-        <Text as="p">{member?.designation}</Text>
-        <Box sx={styles.socialLinks}>
-          {member?.socialLinks?.map((social, index) => (
-            <Link href={social?.link} key={index}>
-              {social?.name === 'twitter' && (
-                <FaTwitter size="18px" color="#55ACEE" />
-              )}
-              {social?.name === 'github' && (
-                <FaGithub size="18px" color="#161614" />
-              )}
-              {social?.name === 'linkedin' && (
-                <FaLinkedin size="18px" />
-              )}
-              {social?.name === 'twitch' && (
-                <FaTwitch size="18px" />
-              )}
-              {social?.name === 'instagram' && (
-                <FaInstagram size="18px" />
-              )}
-            </Link>
-          ))}
-        </Box>
-        <Box sx={styles.resume}>
-          <Heading as="h4">Industries:</Heading>
-          
+    <Flex sx={styles.section}>
+      <Box>
+        <Flex as="figure" sx={styles.avatar}>
+          <Image src={member?.avatar} alt={member?.name} />
+        </Flex>
+        <Box sx={styles.about}>
+          <Heading as="h3">{member?.name}</Heading>
+          <Text as="p">{member?.designation}</Text>
+          <Box sx={styles.socialLinks}>
+            {member?.socialLinks?.map((social, index) => (
+              <Link href={social?.link} key={index}>
+                {social?.name === 'twitter' && (
+                  <FaTwitter size="18px" color="#55ACEE" />
+                )}
+                {social?.name === 'github' && (
+                  <FaGithub size="18px" color="#161614" />
+                )}
+                {social?.name === 'linkedin' && (
+                  <FaLinkedin size="18px" />
+                )}
+                {social?.name === 'twitch' && (
+                  <FaTwitch size="18px" />
+                )}
+                {social?.name === 'instagram' && (
+                  <FaInstagram size="18px" />
+                )}
+              </Link>
+            ))}
+          </Box>
         </Box>
       </Box>
-    </Box>
+      <Box sx={styles.resume}>        
+        <Heading as="h4">Overview</Heading>
+        <Text as="p">{member?.resume?.overview}</Text>
+        {industryListItems && (<Box sx={styles.industries}>
+          <Heading as="h4">Industries</Heading>
+          <ul>{industryListItems}</ul>
+          </Box>
+          )}
+        {resumeJobs && (<Box>
+            <Heading as="h4">Experience:</Heading>
+            {resumeJobs}
+          </Box>)}
+      </Box>
+    </Flex>
   );
 };
 
 export default FounderProfile;
 
 const styles = {
+  section: {
+    alignItems: 'start',
+    justifyContent: 'center'
+  },
   avatar: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -65,6 +82,17 @@ const styles = {
       letterSpacing: '-0.2px',
       mt: [2],
     },
+  },
+  resume: {
+    textAlign: ['center', null, null, 'left'],
+    h4: {
+      color: 'heading',
+      fontFamily: 'body',
+      fontSize: [3, null, 17, null, 4],
+    }
+  },
+  industries: {
+    textAlign: ['left']
   },
   socialLinks: {
     display: 'flex',

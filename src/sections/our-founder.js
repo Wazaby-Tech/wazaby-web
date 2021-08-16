@@ -38,7 +38,7 @@ const data = [
     ],
     industries: [ 'government', 'public safety', 'education', 'entertainment', 'industrial', 'sales' ],
     resume: {
-      details: 'Mike is an experienced software engineer with over 10 years of experience working in various industries providing custom technical solutions. Mike is well versed in Microsoft technologies and frontend frameworks from .NET Framework and .NET Core to Javascript and React.',
+      overview: 'Mike is an experienced software engineer with over 10 years of experience working in various industries providing custom technical solutions. Mike is well versed in Microsoft technologies and frontend frameworks from .NET Framework and .NET Core to Javascript and React.',
       jobs: [{
         company: 'AXS',
         industry: 'entertainment',
@@ -101,18 +101,6 @@ const OurFounder = () => {
       slidesPerView: 1,
       spaceBetween: 0,
     },
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 30,
-    },
-    1024: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-    1601: {
-      slidesPerView: 5,
-      spaceBetween: 30,
-    },
   };
 
   return (
@@ -151,7 +139,7 @@ const OurFounder = () => {
           ref={swiperRef}
           spaceBetween={30}
           watchSlidesVisibility={true}
-          slidesPerView={5}
+          slidesPerView={1}
           breakpoints={breakpoints}
         >
           {data?.map((item) => (
