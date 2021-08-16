@@ -5,7 +5,7 @@ import { jsx, Box, Container, Image } from 'theme-ui';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionHeading from 'components/section-heading';
-import TeamMember from 'components/cards/team-member';
+import FounderProfile from 'components/cards/founder-profile';
 
 import avatar1 from 'assets/images/team/mike-profile-pic.jpg';
 import arrowRight from 'assets/images/icons/arrow-right.png';
@@ -49,6 +49,12 @@ const data = [
         company: 'Advantage Sales & Marketing',
         industry: 'sales',
         dates: 'January 2017 - July 2018',
+        duties: ''
+      },
+      {
+        company: 'ElectroRent',
+        industry: 'rental equipment',
+        dates: 'March 2016 - December 2016',
         duties: ''
       }]
     }
@@ -150,7 +156,7 @@ const OurFounder = () => {
         >
           {data?.map((item) => (
             <SwiperSlide key={item.id}>
-              <TeamMember member={item} />
+              <FounderProfile member={item} />
             </SwiperSlide>
           ))}
         </Swiper>
