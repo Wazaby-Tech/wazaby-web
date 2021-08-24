@@ -41,20 +41,33 @@ const data = [
       overview: 'Mike is an experienced software engineer with over 10 years of experience working in various industries providing custom technical solutions. Mike is well versed in Microsoft technologies and frontend frameworks from .NET Framework and .NET Core to Javascript and React.',
       jobs: [{
         company: 'AXS',
+        role: 'Lead Software Engineer',
+        url: 'https://www.solutions.axs.com',
         industry: 'entertainment',
         dates: 'July 2018 - Present',
         duties: ''
       },
       {
+        company: 'ElectroRent',
+        role: 'Lead Software Engineer',
+        url: 'https://electrorent.com',
+        industry: 'industrial',
+        dates: 'March 2016 - Present',
+        duties: ''
+      },
+      {
         company: 'Advantage Sales & Marketing',
+        role: 'Senior Software Engineer',
+        url: 'https://advantagesolutions.net',
         industry: 'sales',
         dates: 'January 2017 - July 2018',
         duties: ''
       },
       {
-        company: 'ElectroRent',
-        industry: 'rental equipment',
-        dates: 'March 2016 - December 2016',
+        company: 'NC4',
+        role: 'Senior Software Engineer',
+        industry: 'public safety',
+        dates: 'July 2013 - February 2016',
         duties: ''
       }]
     }

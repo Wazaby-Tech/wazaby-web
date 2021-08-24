@@ -11,7 +11,7 @@ const FounderProfile = ({ member }) => {
 
   return (
     <Flex sx={styles.section}>
-      <Box>
+      <Box sx={styles.profile}>
         <Flex as="figure" sx={styles.avatar}>
           <Image src={member?.avatar} alt={member?.name} />
         </Flex>
@@ -41,7 +41,7 @@ const FounderProfile = ({ member }) => {
           </Box>
         </Box>
       </Box>
-      <Box sx={styles.resume}>        
+      <Box sx={styles.resume}>
         <Heading as="h4">Overview</Heading>
         <Text as="p">{member?.resume?.overview}</Text>
         {industryListItems && (<Box sx={styles.industries}>
@@ -50,7 +50,7 @@ const FounderProfile = ({ member }) => {
           </Box>
           )}
         {resumeJobs && (<Box>
-            <Heading as="h4">Experience:</Heading>
+            <Heading as="h4">Work Experience</Heading>
             {resumeJobs}
           </Box>)}
       </Box>
@@ -67,7 +67,7 @@ const styles = {
   },
   avatar: {
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   about: {
     mt: [4],
@@ -83,7 +83,13 @@ const styles = {
       mt: [2],
     },
   },
+  profile: {
+    width: ['30%'],
+    pr: [10]
+  },
   resume: {
+    width: ['45%'],
+    pl: [5],
     textAlign: ['center', null, null, 'left'],
     h4: {
       color: 'heading',
@@ -92,6 +98,7 @@ const styles = {
     }
   },
   industries: {
+    pt: [5],
     textAlign: ['left']
   },
   socialLinks: {
