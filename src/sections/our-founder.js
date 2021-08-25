@@ -69,6 +69,13 @@ const data = [
         industry: 'public safety',
         dates: 'July 2013 - February 2016',
         duties: ''
+      },
+      {
+        company: 'Booz Allen Hamilton',
+        role: 'Software Engineer',
+        industry: 'government',
+        dates: 'June 2009 - July 2013',
+        duties: ''
       }]
     }
   }

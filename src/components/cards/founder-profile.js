@@ -43,7 +43,7 @@ const FounderProfile = ({ member }) => {
       </Box>
       <Box sx={styles.resume}>
         <Heading as="h4">Overview</Heading>
-        <Text as="p">{member?.resume?.overview}</Text>
+        <Text sx={styles.overview} as="p">{member?.resume?.overview}</Text>
         {industryListItems && (<Box sx={styles.industries}>
           <Heading as="h4">Industries</Heading>
           <ul>{industryListItems}</ul>
@@ -63,7 +63,7 @@ export default FounderProfile;
 const styles = {
   section: {
     alignItems: 'start',
-    justifyContent: 'center'
+    justifyContent: 'start'
   },
   avatar: {
     alignItems: 'center',
@@ -84,18 +84,25 @@ const styles = {
     },
   },
   profile: {
-    width: ['30%'],
-    pr: [10]
+    width: ['20%'],
+    pr: [5]
   },
   resume: {
-    width: ['45%'],
+    width: ['50%'],
     pl: [5],
     textAlign: ['center', null, null, 'left'],
     h4: {
       color: 'heading',
       fontFamily: 'body',
       fontSize: [3, null, 17, null, 4],
+    },
+    a: {
+      color: 'black'
     }
+  },
+  overview: {
+    pl: [5],
+    pt: [3]
   },
   industries: {
     pt: [5],
