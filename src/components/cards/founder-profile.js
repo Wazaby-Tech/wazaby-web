@@ -5,9 +5,9 @@ import { FaTwitter, FaGithub, FaLinkedin, FaTwitch, FaInstagram } from 'react-ic
 import ResumeJob from './resume-job';
 
 const FounderProfile = ({ member }) => {
-  console.log(member);
+  //console.log(member);
   let industryListItems = member?.industries?.map((industry) => (<li>{industry}</li>))
-  let resumeJobs = member?.resume?.jobs?.map((job) => (<ResumeJob job={job} />))
+  let resumeJobs = member?.resume?.jobs?.map((job, i) => (<ResumeJob key={i} job={job} />))
 
   return (
     <Flex sx={styles.section}>
@@ -40,16 +40,16 @@ const FounderProfile = ({ member }) => {
             ))}
           </Box>
         </Box>
-      </Box>
-      <Box sx={styles.resume}>
-        <Heading as="h4">Overview</Heading>
-        <Text sx={styles.overview} as="p">{member?.resume?.overview}</Text>
         {industryListItems && (<Box sx={styles.industries}>
           <Heading as="h4">Industries</Heading>
           <ul>{industryListItems}</ul>
           </Box>
           )}
-        {resumeJobs && (<Box>
+      </Box>
+      <Box sx={styles.resume}>
+        <Heading as="h4">Overview</Heading>
+        <Text sx={styles.overview} as="p">{member?.resume?.overview}</Text>
+        {resumeJobs && (<Box sx={styles.work}>
             <Heading as="h4">Work Experience</Heading>
             {resumeJobs}
           </Box>)}
@@ -62,8 +62,12 @@ export default FounderProfile;
 
 const styles = {
   section: {
-    alignItems: 'start',
-    justifyContent: 'start'
+    minWidth: ['640px'],
+    alignItems: ['start'],
+    justifyContent: ['start', null, null, 'center'],
+    h4: {
+      textTransform: 'uppercase'
+    }
   },
   avatar: {
     alignItems: 'center',
@@ -84,8 +88,14 @@ const styles = {
     },
   },
   profile: {
-    width: ['20%'],
-    pr: [5]
+    width: ['40%', null, '30%', null, '20%', null],
+    pr: [5],
+    h4: {
+      color: 'heading',
+      fontFamily: 'body',
+      fontSize: [3, null, 17, null, 4],
+      textAlign: ['left']
+    },
   },
   resume: {
     width: ['50%'],
@@ -95,18 +105,33 @@ const styles = {
       color: 'heading',
       fontFamily: 'body',
       fontSize: [3, null, 17, null, 4],
+      textAlign: ['left']
     },
     a: {
       color: 'black'
     }
   },
   overview: {
+    textAlign: ['left'],
     pl: [5],
     pt: [3]
   },
   industries: {
     pt: [5],
-    textAlign: ['left']
+    textAlign: ['left'],
+    ul: {
+      li: {
+        textTransform: 'uppercase',
+        listStyleType: 'none',
+        "::before": {
+          content: '" || "'
+        }
+      }
+    }
+  },
+  work: {    
+    textAlign: ['left'],
+    pt: [5]
   },
   socialLinks: {
     display: 'flex',

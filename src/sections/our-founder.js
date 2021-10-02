@@ -30,22 +30,18 @@ const data = [
       {
         name: 'linkedin',
         link: 'https://www.linkedin.com/in/michael-holloway-wazaby'
-      },
-      {
-        name: 'twitch',
-        link: 'https://twitch.tv/wazabydev'
       }
     ],
     industries: [ 'government', 'public safety', 'education', 'entertainment', 'industrial', 'sales' ],
     resume: {
-      overview: 'Mike is an experienced software engineer with over 10 years of experience working in various industries providing custom technical solutions. Mike is well versed in Microsoft technologies and frontend frameworks from .NET Framework and .NET Core to Javascript and React.',
+      overview: 'Mike is an experienced software engineer with over 10 years of experience working in various industries providing custom technical solutions. Mike is well versed in Microsoft technologies from .NET Framework and .NET Core to frontend frameworks Javascript and React.',
       jobs: [{
         company: 'AXS',
         role: 'Lead Software Engineer',
         url: 'https://www.solutions.axs.com',
         industry: 'entertainment',
         dates: 'July 2018 - Present',
-        duties: ''
+        spotlight: 'Led a year long enterprise wide technical project to merge 3 region specific codebases into one global codebase. Database schemas on 2 different providers as well as middle tier and desktop applications needed extensive feature flagging to ensure region specific features displayed properly.'
       },
       {
         company: 'ElectroRent',
@@ -53,7 +49,7 @@ const data = [
         url: 'https://electrorent.com',
         industry: 'industrial',
         dates: 'March 2016 - Present',
-        duties: ''
+        spotlight: 'Led implementation on an internal pricing tool that calculates new rates for assets based on a proprietary algorithm using historical data. Supports a data analytics application that provides insights into revenue and performance of products.'
       },
       {
         company: 'Advantage Sales & Marketing',
@@ -61,21 +57,21 @@ const data = [
         url: 'https://advantagesolutions.net',
         industry: 'sales',
         dates: 'January 2017 - July 2018',
-        duties: ''
+        spotlight: 'Worked on a next generation product that schedules food sampling in grocery stores across several nationwide retailers. Led design and implmentation on a resource management functionality that helps users manage their carts and sampling stations directly within the application to alleviate support requests.'
       },
       {
         company: 'NC4',
         role: 'Senior Software Engineer',
         industry: 'public safety',
         dates: 'July 2013 - February 2016',
-        duties: ''
+        spotlight: 'Worked on a product used by police officers that streamlined the data gathering process. All data feeds were fed into the software allowing connections to be made instaneously across department\'s jurisdiction.'
       },
       {
         company: 'Booz Allen Hamilton',
         role: 'Software Engineer',
         industry: 'government',
         dates: 'June 2009 - July 2013',
-        duties: ''
+        spotlight: 'Led the project\'s technical migration from SharePoint 2010 to SharePoint 2013'
       }]
     }
   }
@@ -134,7 +130,7 @@ const OurFounder = () => {
       </Container>
       <Box
         sx={{
-          ml: currentIndex === 0 ? containerOffset?.left : 0,
+          ml: [ 0, containerOffset?.left, null, null ],
           ...styles.teamWrapper,
         }}
       >

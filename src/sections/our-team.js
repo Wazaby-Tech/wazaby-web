@@ -98,7 +98,7 @@ const OurTeam = () => {
       <Container ref={containerRef}>
         <SectionHeading
           sx={styles.heading}
-          title="Meet the founder"
+          title="Meet the team"
           description="Build cool stuff with us."
         />
       </Container>
