@@ -9,7 +9,7 @@ export default [
   },
   {
     path: 'team',
-    label: 'Team',
+    label: 'Founder',
   },
   {
     path: 'why-us',

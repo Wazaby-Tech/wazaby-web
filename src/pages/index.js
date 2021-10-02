@@ -4,7 +4,7 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import Services from 'sections/services';
-import OurTeam from 'sections/our-team';
+import OurFounder from 'sections/our-founder';
 import WhyUs from 'sections/why-us';
 
 export default function IndexPage() {
@@ -17,7 +17,7 @@ export default function IndexPage() {
         />
         <Banner />
         <Services />
-        <OurTeam />
+        <OurFounder />
         <WhyUs />
       </Layout>
     </ThemeProvider>

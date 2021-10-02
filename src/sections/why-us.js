@@ -16,6 +16,7 @@ const data = [
     list: [
       'Robust Solutions',
       'Technical Expertise',
+      'Proven Track Record'
     ],
   },
 ];
@@ -40,7 +41,7 @@ const WhyUs = () => {
                     <Box key={i} className="list-item">
                       <RiCheckboxCircleFill
                         color="#3FDBB1"
-                        size="20px"
+                        size="15px"
                         sx={{ mr: 2 }}
                       />
                       <span>{item}</span>
