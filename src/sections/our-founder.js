@@ -130,7 +130,7 @@ const OurFounder = () => {
       </Container>
       <Box
         sx={{
-          ml: [ 0, containerOffset?.left, null, null ],
+          ml: [ 0 ],
           ...styles.teamWrapper,
         }}
       >
