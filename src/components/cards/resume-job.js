@@ -8,7 +8,8 @@ const ResumeJob = ({job}) => {
     let companyLink = job.company;
     let spotlight = (job.spotlight && <Text as="blockquote" sx={styles.spotlight}>{job.spotlight}</Text>);
     return (<Box sx={styles.job}>
-        <Text as="p"><strong>{companyLink}</strong> | <em>{job.role}</em> | {job.dates}</Text>
+        <Text as="p"><strong>{companyLink}</strong> | <em>{job.role}</em></Text>
+        <Text as="p">{job.dates}</Text>
         {spotlight}
     </Box>)
 }
@@ -21,6 +22,7 @@ const styles = {
       pl: [3]
     },
     spotlight: {
+        pt: [3],
         display: ['none', null, null, null, 'inline-block']
     },
     industry: {
