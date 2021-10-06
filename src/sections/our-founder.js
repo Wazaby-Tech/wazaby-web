@@ -33,6 +33,28 @@ const data = [
       }
     ],
     industries: [ 'government', 'public safety', 'education', 'entertainment', 'industrial', 'sales' ],
+    education: [{
+      schoolName: 'California State University of Los Angeles',
+      schoolNameShort: 'CSULA',
+      degree: 'Master\'s of Science',
+      degreeShort: 'MS',
+      major: 'Computer Science',
+      majorShort: 'CS',
+      gradYear: 2016,
+      city: 'Los Angeles',
+      state: 'CA'
+    },
+    {
+     schoolName: 'College of the Holy Cross',
+     schoolNameShort: 'HC',
+     degree: 'Bachelor of Arts',
+     degreeShort: 'BA',
+     major: 'Computer Science',
+     majorShort: 'CS',
+     gradYear: 2009,
+     city: 'Worcester',
+     state: 'MA'
+    }],
     resume: {
       overview: 'Mike is an experienced software engineer with over 10 years of experience working in various industries providing custom technical solutions. Mike is well versed in Microsoft technologies from .NET Framework and .NET Core to frontend frameworks Javascript and React.',
       jobs: [{

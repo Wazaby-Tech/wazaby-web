@@ -13,7 +13,7 @@ const Banner = () => {
           <SectionHeading
             sx={styles.heading}
             title="Delivering technology that works for you"
-            description="A technical solutions provider with your business in mind"
+            description="A technical consultancy with your business in mind"
           />
           <Box as="figure" sx={styles.illustration}>            
             <Image src={illustration} alt="illustration" />

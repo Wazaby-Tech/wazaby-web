@@ -3,11 +3,13 @@
 import { jsx, Flex, Box, Image, Text, Heading, Link } from 'theme-ui';
 import { FaTwitter, FaGithub, FaLinkedin, FaTwitch, FaInstagram } from 'react-icons/fa';
 import ResumeJob from './resume-job';
+import EducationProfile from './education-profile';
 
 const FounderProfile = ({ member }) => {
   //console.log(member);
-  let industryListItems = member?.industries?.map((industry) => (<li>{industry}</li>))
+  let industries = member?.industries?.map((industry, i) => (<Text as='p' key={i}>{industry}</Text>))
   let resumeJobs = member?.resume?.jobs?.map((job, i) => (<ResumeJob key={i} job={job} />))
+  let education = member?.education?.map((school, i) => (<EducationProfile key={i} school={school} />))
 
   return (
     <Flex sx={styles.section}>
@@ -40,9 +42,13 @@ const FounderProfile = ({ member }) => {
             ))}
           </Box>
         </Box>
-        {industryListItems && (<Box sx={styles.industries}>
+        {education && (<Box sx={styles.education}>
+          <Heading as="h4">Education</Heading>
+          {education}
+          </Box>)}
+        {industries && (<Box sx={styles.industries}>
           <Heading as="h4">Industries</Heading>
-          <ul>{industryListItems}</ul>
+          {industries}
           </Box>
           )}
       </Box>
@@ -116,17 +122,28 @@ const styles = {
     pl: [5],
     pt: [3]
   },
+  education: {
+    pt: [5],
+    h4: {
+      color: 'heading',
+      fontFamily: 'body',
+      fontSize: [3, null, 17, null, 4],
+      textAlign: ['left']
+    }
+  },
   industries: {
     pt: [5],
     textAlign: ['left'],
-    ul: {
-      li: {
-        textTransform: 'uppercase',
-        listStyleType: 'none',
-        "::before": {
-          content: '" || "'
-        }
-      }
+    textTransform: 'uppercase',
+    h4: {
+      color: 'heading',
+      fontFamily: 'body',
+      fontSize: [3, null, 17, null, 4],
+      textAlign: ['left']
+    },
+    p: {
+      pt: [3],
+      pl: [3]
     }
   },
   work: {    
