@@ -3,7 +3,7 @@
 import { jsx } from 'theme-ui';
 import { Link } from 'components/link';
 import Image from 'components/image';
-import WLogo from 'assets/images/logos/WazabyWhiteTransparent.png';
+import WLogo from 'assets/images/logos/WazabyTech.svg';
 
 export default function Logo({ isSticky, footer, ...props }) {
   return (
@@ -19,7 +19,7 @@ const styles = {
     display: 'inline-flex',
     svg: {
       height: 'auto',
-      width: [128, null, '100%'],
+      width: [75, 100],
     },
   },
 };
