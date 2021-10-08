@@ -6,10 +6,16 @@ import { Link } from 'components/link';
 const EducationProfile = ({school}) => {
     let cityState = `${school.city}, ${school.state}`;
     return (<Box sx={styles.school}>
+<<<<<<< HEAD
         <Text as="p"><strong>{school.schoolName}</strong></Text>
         <Text as="p">{cityState}</Text>
         <Text as="p">{school.gradYear} | <em>{school.degree}</em></Text>
         <Text as="p">Major: <em>{school.major}</em></Text>
+=======
+        <Text as="p"><strong>{school.schoolNameShort}</strong> | {school.gradYear} | <em>{school.degreeShort}</em></Text>
+        <Text as="p">Major: <em>{school.majorShort}</em></Text>
+        <Text as="p">{cityState}</Text>
+>>>>>>> origin/develop
     </Box>)
 }
 
