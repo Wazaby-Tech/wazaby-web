@@ -104,6 +104,7 @@ const styles = {
     },
   },
   resume: {
+    display: ['none', 'inline-block'],
     width: ['50%'],
     pl: [5],
     textAlign: ['center', null, null, 'left'],
@@ -133,6 +134,7 @@ const styles = {
   },
   industries: {
     pt: [5],
+    display: ['none', null, null, null, 'inline-block'],
     textAlign: ['left'],
     textTransform: 'uppercase',
     h4: {

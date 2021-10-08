@@ -9,7 +9,7 @@ import tabImage1 from 'assets/images/tab-illustration-1.png';
 const data = [
   {
     id: 1,
-    tabTitle: 'Why choose Wazaby Tech?',
+    tabTitle: 'Why choose Wazaby Tech Consulting?',
     title: `We will work with you to design the best solution`,
     description: `Our technical consultation will outline the best solution and ensure achieved business objectives.`,
     image: tabImage1,
