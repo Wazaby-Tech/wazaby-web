@@ -19,7 +19,7 @@ const styles = {
     display: 'inline-flex',
     svg: {
       height: 'auto',
-      width: [75, 100],
+      width: ['25%', '50%', '75%', '100%'],
     },
   },
 };
