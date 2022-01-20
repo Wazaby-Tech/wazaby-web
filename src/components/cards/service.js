@@ -1,17 +1,17 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Image, Text, Heading } from 'theme-ui';
+import { jsx, Box, Image, Text, Heading, Button } from 'theme-ui';
 import { LearnMore } from 'components/link';
 
 const Service = ({ item }) => {
   return (
     <Box sx={styles.serviceItem}>
-      <Box as="figure" sx={styles.figure}>
+      {item?.icon && <Box as="figure" sx={styles.figure}>
         <Image src={item?.icon} alt="icon" />
-      </Box>
+      </Box>}
       <Box sx={styles.content}>
         <Heading as="h3">{item?.title}</Heading>
-        <Text as="p">{item?.description}</Text>
+        {item?.description && <Text as="p">{item?.description}</Text>}
         {item?.moreLink && <LearnMore path={item?.moreLink} />}
       </Box>
     </Box>
@@ -24,6 +24,11 @@ const styles = {
   serviceItem: {
     display: [null, null, null, null, null, 'flex'],
     textAlign: ['center', null, null, null, null, 'left'],
+    backgroundColor: 'primary',
+    color: 'text',
+    padding: ['5px', '7px', '10px', '15px', '17px', '20px'],
+    borderRadius: ['5px', '7px', '10px', null, '13px', '15px'],
+    height: ['100px', null, '150px', null, null, '200px']
   },
   figure: {
     minWidth: [88, null, null, null, null, 70, 88],
