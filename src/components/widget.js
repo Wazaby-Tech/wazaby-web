@@ -1,20 +1,24 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Heading, Image } from 'theme-ui';
-import { Link } from 'components/link';
+import { jsx, Box, Heading } from 'theme-ui';
+import { ImageLink, Link } from 'components/link';
 import { rgba } from 'polished';
+import { HiOutlineMail } from 'react-icons/hi';
 
 const Widget = ({ title, items }) => {
   return (
     <Box sx={styles.footerWidget}>
       <Heading as="h4">{title}</Heading>
       <ul>
-        {items.map(({ path, label, icon, external }, i) => (
-          <li key={i}>
-            {icon && <Image src={icon} alt={label} />}
-            <Link path={path} key={i} label={label} external={external} variant="footer" />
-          </li>
-        ))}
+        {items.map(({ path, label, icon, external, emailIcon }, i) => {
+          return (          
+            <li key={i}>
+              {emailIcon &&  <Link path={path} label={label} external={external} variant="footer"><HiOutlineMail size='18px' /></Link>}
+              {icon && <ImageLink path={path} label={label || path} external={external} imgSrc={icon} />}
+              {label && <Link path={path} label={label} external={external} variant="footer" />}
+            </li>
+            );
+          })}
       </ul>
     </Box>
   );
@@ -27,7 +31,7 @@ const styles = {
     h4: {
       color: 'heading',
       fontFamily: 'body',
-      fontSize: '18px',
+      fontSize: '22px',
       fontWeight: 500,
       lineHeight: 1.68,
       letterSpacing: 'heading',

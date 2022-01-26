@@ -2,19 +2,13 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Button, Image } from 'theme-ui';
 import { rgba } from 'polished';
-import SectionHeading from 'components/section-heading';
-import illustration from 'assets/images/banner-illustration.png';
+import illustration from 'assets/images/wazaby-banner.jpg';
 
 const Banner = () => {
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
-        <Box sx={styles.contentWrapper}>
-          <SectionHeading
-            sx={styles.heading}
-            title="Delivering technology that works for you"
-            description="A technical consultancy with your business in mind"
-          />
+        <Box sx={styles.contentWrapper}>          
           <Box as="figure" sx={styles.illustration}>            
             <Image src={illustration} alt="illustration" />
           </Box>
@@ -66,7 +60,7 @@ const styles = {
     position: 'relative',
     img: {
       display: ['none', null, null, 'block'],
-      maxWidth: ['90%'],
+      maxWidth: ['100%'],
       m: ['0 auto'],
     },
   },

@@ -4,7 +4,8 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import Services from 'sections/services';
-import WhyUs from 'sections/why-us';
+import WhoWeAre from 'sections/who-we-are';
+import ContactUs from 'sections/contact-us';
 
 export default function IndexPage() {
   return (
@@ -16,7 +17,8 @@ export default function IndexPage() {
         />
         <Banner />
         <Services />
-        <WhyUs />
+        <WhoWeAre />
+        <ContactUs />
       </Layout>
     </ThemeProvider>
   );

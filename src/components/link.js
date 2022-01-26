@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import NextLink from 'next/link';
-import { jsx, Link as A } from 'theme-ui';
+import { jsx, Link as A, Image } from 'theme-ui';
 import { Link as MenuLink } from 'react-scroll';
 import { HiOutlineChevronRight } from 'react-icons/hi';
 
@@ -26,6 +26,14 @@ export function Link({ path, label, external, children, ...rest }) {
   return (
     <NextLink href={path} passHref={external ?? false}>
       <A {...rest}>{children ? children : label}</A>
+    </NextLink>
+  );
+}
+
+export function ImageLink({path, label, external, imgSrc, ...rest}) {
+  return (
+    <NextLink href={path} passHref={external ?? false}>
+      <A {...rest}>{imgSrc ? <Image src={imgSrc} alt={label} /> : label}</A>
     </NextLink>
   );
 }
