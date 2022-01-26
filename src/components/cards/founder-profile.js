@@ -1,7 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Flex, Box, Image, Text, Heading, Link } from 'theme-ui';
-import { FaTwitter, FaGithub, FaLinkedin, FaTwitch, FaInstagram } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin, FaTwitch, FaInstagram, HiOutlineMail } from 'react-icons/fa';
 import ResumeJob from './resume-job';
 import EducationProfile from './education-profile';
 
@@ -37,6 +37,9 @@ const FounderProfile = ({ member }) => {
                 )}
                 {social?.name === 'instagram' && (
                   <FaInstagram size="18px" />
+                )}
+                {social?.name === 'email' && (
+                  <HiOutlineMail size="18px" />
                 )}
               </Link>
             ))}

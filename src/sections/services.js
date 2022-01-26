@@ -4,28 +4,25 @@ import { jsx, Box, Container } from 'theme-ui';
 import { rgba } from 'polished';
 import SectionHeading from 'components/section-heading';
 import Service from 'components/cards/service';
-import icon1 from 'assets/images/icons/service1.png';
-import icon2 from 'assets/images/icons/service2.png';
-import icon3 from 'assets/images/icons/service3.png';
 
 const data = [
   {
-    id: 1,
-    icon: icon1,
+    id: 'consultation',
     title: 'Technical Consultation',
     description: `Need an technical opinion on a business problem? Let's take a look.`,
+    detail: 'Consultation detail'
   },
   {
-    id: 3,
-    icon: icon2,
-    title: 'Custom Software Development',
-    description: `Need a custom or propietary solution built just for you? Let's build it together.`,
+    id: 'migration',
+    title: 'Platform Migration Analysis',
+    description: `Thinking about migrating from .Net Framework to the latest .Net? Let's see the impact.`,
+    detail: 'Migration detail'
   },
   {
-    id: 4,
-    icon: icon3,
-    title: 'Legacy Application Modernization',
-    description: `Your legacy system need a makeover? Let's make it shine.`,
+    id: 'ia',
+    title: 'Information Architecture',
+    description: `Reorganizing your documentation libary? Let's check it out.`,
+    detail: 'IA detail'
   },
 ];
 
@@ -36,7 +33,6 @@ const Services = () => {
         <SectionHeading
           sx={styles.heading}
           title="Our Services"
-          description="We make your company better and more efficient"
         />
         <Box sx={styles.contentWrapper}>
           {data?.map((item) => (
