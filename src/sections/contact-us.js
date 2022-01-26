@@ -37,7 +37,7 @@ const emailItems =
   {
     path: 'mailto:inquiries@wazabytech.com',
     icon: null,
-    label: 'Email',
+    label: 'Inquiries',
     external: true,
     emailIcon: true
   }
