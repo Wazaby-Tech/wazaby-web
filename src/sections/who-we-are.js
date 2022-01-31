@@ -1,20 +1,14 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { useRef, useState, useEffect } from 'react';
-import { jsx, Box, Container, Image } from 'theme-ui';
+import { jsx, Box } from 'theme-ui';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import SectionHeading from 'components/section-heading';
-import TeamMember from 'components/cards/team-member';
-
-import avatar1 from 'assets/images/team/mike-profile-pic.jpg';
-import arrowRight from 'assets/images/icons/arrow-right.png';
 
 SwiperCore.use([Navigation, Pagination]);
 
 const data = {
   quote: 'We deliver technical expertise to optimize your digital business needs.',
-  para: 'Organizations looking to stay ahead of the curve often can\'t do it alone. However, the digital infrastructure landscape is constantly changing. We strive to enable organizations to take the next leap in their digital transformation whether it\'s the first or the next in a series of many. Wazaby Tech Consulting is a valuable and effective partner on the road to achieve the next level of technical maturity.'
+  para: 'Organizations looking to stay ahead of the curve often can\'t do it alone. However, the digital infrastructure landscape is constantly changing. We strive to enable organizations to take the next leap in their digital transformation whether it\'s the first or the next in a series of many. Wazaby Tech Consulting is a valuable and effective partner on the road to achieve your business\' next level of technical maturity.'
 };
 
 const WhoWeAre = () => {

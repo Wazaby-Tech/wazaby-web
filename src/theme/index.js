@@ -20,7 +20,8 @@ export default {
       dark: {
         text: '#fff',
         background: '#000',
-        primary: '#0cf',
+        backgroundSecondary: '#F9FBFD',
+        primary: '#B2D2A4',
         secondary: '#09c',
         muted: '#111',
       },
