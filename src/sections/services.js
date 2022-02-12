@@ -14,8 +14,8 @@ const data = [
   },
   {
     id: 'migration',
-    title: 'Platform Migration Analysis',
-    description: `Thinking about migrating from .Net Framework to the latest .Net? Let's see the impact.`,
+    title: '.Net Migration Analysis',
+    description: `Thinking about migrating to .Net? Let's see the impact.`,
     detail: 'Migration detail'
   },
   {
