@@ -1,15 +1,38 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Box, Container, Button, Image } from 'theme-ui';
+import { jsx, Box, Container, Button, Heading, Text, Image } from 'theme-ui';
 import { rgba } from 'polished';
+import { scroller } from 'react-scroll';
 import illustration from 'assets/images/wazaby-banner.jpg';
+
+const scrollToContact = () => {
+  scroller.scrollTo('contact', {
+    smooth: true,
+    duration: 500,
+    offset: -70,
+  });
+};
 
 const Banner = () => {
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
-        <Box sx={styles.contentWrapper}>          
-          <Box as="figure" sx={styles.illustration}>            
+        <Box sx={styles.contentWrapper}>
+          <Box sx={styles.heading}>
+            <Heading as="h1">
+              We deliver technical expertise to optimize your digital business.
+            </Heading>
+            <Text as="p">
+              Wazaby Tech Consulting is a valuable and effective partner on the
+              road to achieve the next level of technical maturity.
+            </Text>
+          </Box>
+          <Box sx={styles.buttonWrapper}>
+            <Button variant="primary" onClick={scrollToContact}>
+              Start a conversation
+            </Button>
+          </Box>
+          <Box as="figure" sx={styles.illustration}>
             <Image src={illustration} alt="illustration" />
           </Box>
         </Box>
@@ -44,13 +67,19 @@ const styles = {
     justifyContent: 'flex-end',
   },
   heading: {
+    textAlign: 'center',
     mb: [30],
     maxWidth: [null, null, null, 500, 560, 730],
-    h2: {
+    h1: {
+      fontFamily: 'heading',
+      fontWeight: 700,
       fontSize: [8, null, null, 8, 9, 10, 11],
       lineHeight: [1.57],
+      letterSpacing: '-0.5px',
     },
     p: {
+      color: 'text',
+      mt: [3],
       fontSize: [1, null, null, 3],
       lineHeight: [1.87, null, null, 2.33],
     },
@@ -65,10 +94,7 @@ const styles = {
     },
   },
   buttonWrapper: {
-    textAlign: ['center'],
-    position: ['static', null, null, 'absolute'],
-    left: '50%',
-    top: 0,
-    transform: ['unset', null, null, 'translateX(-50%)'],
+    textAlign: 'center',
+    mb: [8, null, null, 9],
   },
 };
