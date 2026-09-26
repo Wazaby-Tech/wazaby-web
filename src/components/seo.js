@@ -4,7 +4,7 @@ import Head from 'next/head';
 export default function SEO({
   description = 'Delivering technology that works for you',
   author = 'Wazaby Tech LLC',
-  meta,
+  meta = [],
   title = 'Wazaby Tech LLC',
 }) {
   const metaData = [
@@ -50,9 +50,3 @@ export default function SEO({
     </Head>
   );
 }
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-};
