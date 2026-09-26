@@ -24,6 +24,12 @@ const data = [
     description: `Reorganizing your documentation libary? Let's check it out.`,
     detail: 'IA detail'
   },
+  {
+    id: 'ai-augmented',
+    title: 'AI-Augmented Engineering',
+    description: `Curious what AI-augmented delivery looks like in practice? Let's show you.`,
+    detail: 'AI-augmented engineering detail'
+  },
 ];
 
 const Services = () => {
@@ -65,6 +71,7 @@ const styles = {
       'repeat(1, 325px)',
       'repeat(1, 285px)',
       'repeat(3, 1fr)',
+      'repeat(4, 1fr)',
     ],
   },
 };
