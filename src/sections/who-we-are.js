@@ -1,16 +1,7 @@
 /** @jsxRuntime classic */
 /** @jsx jsx */
-import { useRef, useState, useEffect } from 'react';
-import { jsx, Box, Container, Image } from 'theme-ui';
-import SwiperCore, { Navigation, Pagination } from 'swiper';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { jsx, Box } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
-import TeamMember from 'components/cards/team-member';
-
-import avatar1 from 'assets/images/team/mike-profile-pic.jpg';
-import arrowRight from 'assets/images/icons/arrow-right.png';
-
-SwiperCore.use([Navigation, Pagination]);
 
 const data = {
   quote: 'We deliver technical expertise to optimize your digital business needs.',
